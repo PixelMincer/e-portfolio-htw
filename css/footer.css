@@ -1,0 +1,39 @@
+footer {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    /*background-color: #2a2a2a;*/
+    position: static;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: black;
+    border-top: 3px solid black;
+  }
+  
+  .social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media-list li {
+    margin: 0;
+    transition: color 0.5s ease;
+    font-size: 2em;
+    float: left;
+    margin: 0 15px;
+  }
+  
+  .social-media-list li:hover {
+    color: #0aaff1;
+  }
+  
+  .social-media-list li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

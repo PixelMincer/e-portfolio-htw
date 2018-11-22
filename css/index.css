@@ -1,0 +1,38 @@
+#my-address {
+    display: block;
+    background-color: white;
+    font-family: 'TitleFont', cursive;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  #map {
+    height: 350px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    opacity: 0.5;
+    top: calc(150px + 80px);
+    /* Padding from section + height of title*/
+    position: absolute;
+  }
+  
+  .timeline__content p {
+    font-size: 1em;
+  }
+  
+  .timeline__content h2 {
+    font-size: 1em;
+  }
+  
+  .timeline__content hr {
+    border-bottom: 5px solid black;
+    margin-top: -5px;
+    width: 60%;
+  }
+  
+  .timeline__content__wrap {
+    font-size: 2em;
+  }

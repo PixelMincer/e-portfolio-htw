@@ -1,0 +1,17 @@
+.my-study {
+    position: relative;
+    min-height: 550px;
+  }
+  
+  .my-study-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/HTW_Chur.jpg');
+    background-size: cover;
+    opacity: 0.1;
+    filter: blur(5px);
+  }

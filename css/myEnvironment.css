@@ -1,0 +1,20 @@
+.important-person {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .important-person .picture {
+    flex-shrink: 0;
+  }
+  
+  .important-person .description {
+    margin-left: 15px;
+  }
+  
+  .important-person .description h2 {
+    font-size: 3em;
+  }
+  
