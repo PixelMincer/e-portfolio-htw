@@ -1,4 +1,4 @@
-.video-gallery {
+.video-gallery, .model-gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,9 +9,13 @@
   .video-gallery iframe {
     margin: 10px;
   }
+
+  .model-gallery iframe {
+    margin: 10px;
+  }
   
   @media screen and (max-width: 1040px) {
-    .video-gallery {
+    .video-gallery, .model-gallery {
       flex-direction: column;
     }
   

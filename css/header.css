@@ -1,96 +1,93 @@
 /* START HEADER STYLING */
 header {
-    height: 80px;
-    width: 100%;
-    /*background-color: #2a2a2a;*/
-    background-color: white;
-    position: fixed;
-    /* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq*/
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    z-index: 991;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .navigation-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'TitleFont';
-    font-size: 2rem;
-    color: black;
-  }
-  
-  .navigation-list li {
-    float: left;
-    margin: 0 15px;
-    transition: color 0.5s ease;
-  }
-  
-  .navigation-list li:hover {
-    color: #1DA1F2;
-  }
-  
-  .navigation-list li a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  /* END HEADER STYLING */
-  /* START MENU OVERLAY STYLING (OVERRIDES) */
-  .bar {
-    background-color: #0aaff1;
-  }
-  
-  .toggle-active .bar {
-    background-color: #0aaff1;
-  }
-  
+  height: 80px;
+  width: 100%;
+  /*background-color: #2a2a2a;*/
+  background-color: white;
+  position: fixed;
+  /* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq*/
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 991;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'TitleFont';
+  font-size: 2rem;
+  color: black;
+}
+
+.navigation-list li {
+  float: left;
+  margin: 0 15px;
+  transition: color 0.5s ease;
+}
+
+.navigation-list li:hover {
+  color: #1DA1F2;
+}
+
+.navigation-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bar {
+  background-color: #0aaff1;
+}
+
+.toggle-active .bar {
+  background-color: #0aaff1;
+}
+
+.toggle-button {
+  z-index: 992;
+  display: block;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1040px) {
   .toggle-button {
-    z-index: 992;
-    display: block;
+    visibility: visible;
+  }
+
+  .navigation-list {
     visibility: hidden;
   }
-  
-  @media screen and (max-width: 1040px) {
-    .toggle-button {
-      visibility: visible;
-    }
-  
-    .navigation-list {
-      visibility: hidden;
-    }
-  }
-  
-  .toggle-button:hover {
-    opacity: 1;
-  }
-  
-  .overlay {
-    background-image: none;
-    /*background-color: #2a2a2a;*/
-    background-color: white;
-    z-index: 990;
-    color: black;
-  }
-  
-  .overlay ul {
-    font-family: 'TitleFont', cursive;
-    text-transform: uppercase;
-  }
-  
-  .overlay ul li a {
-    color: black;
-    font-size: 0.5em;
-    transition: color 0.5s ease;
-  }
-  
-  .overlay ul li a:hover {
-    color: #0aaff1;
-    font-size: 0.5em;
-  }
-  
-  /* END MENU OVERLAY STYLING */
+
+}
+
+.toggle-button:hover {
+  opacity: 1;
+}
+
+.overlay {
+  background-image: none;
+  /*background-color: #2a2a2a;*/
+  background-color: white;
+  z-index: 990;
+  color: black;
+}
+
+.overlay ul {
+  font-family: 'TitleFont', cursive;
+  text-transform: uppercase;
+}
+
+.overlay ul li a {
+  color: black;
+  font-size: 0.5em;
+  transition: color 0.5s ease;
+}
+
+.overlay ul li a:hover {
+  color: #0aaff1;
+  font-size: 0.5em;
+}

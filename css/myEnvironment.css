@@ -1,20 +1,35 @@
 .important-person {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.important-person .picture {
+  flex-shrink: 0;
+}
+
+.important-person .description {
+  margin-left: 15px;
+}
+
+.important-person .description h2 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1040px) {
+  .important-person {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 15px 0;
   }
-  
-  .important-person .picture {
-    flex-shrink: 0;
-  }
-  
+
   .important-person .description {
-    margin-left: 15px;
+    text-align: center;
   }
-  
-  .important-person .description h2 {
-    font-size: 3em;
+
+  p {
+    text-align: center;
   }
-  
+}

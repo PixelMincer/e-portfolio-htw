@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('.timeline').timeline({
     startIndex: 0,
     mode: 'vertical'
@@ -7,20 +7,29 @@ $(document).ready(function() {
 
 // Initialize and add the map
 function initMap() {
-  // The location of Uluru
-  var uluru = {
-    lat: -25.344,
-    lng: 131.036
+  // My location
+  var myLocation = {
+    lat: 47.044814,
+    lng: 9.424434
   };
-  // The map, centered at Uluru
+  // The map, centered at myLocation
   var map = new google.maps.Map(
     document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
+      center: myLocation
     });
-  // The marker, positioned at Uluru
+  // The marker, positioned at my location
   var marker = new google.maps.Marker({
-    position: uluru,
+    position: myLocation,
     map: map
   });
+
+  var bounds = new google.maps.LatLngBounds();
+  var loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+  bounds.extend(loc);
+
+  // TODO: Fix this
+  map.fitBounds(bounds);
+  map.panToBounds(bounds);
+
+
 }

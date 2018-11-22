@@ -200,25 +200,13 @@ ul.white {
   color: #0aaff1;
 }
 
-/* END UTILITY CLASSES */
 
-/* START MY CV STYLING */
+@media screen and (max-width: 1040px) {
+  .title-image {
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
 
-/* END MY CV STYLING */
-/* START MY STUDY STYLING */
-
-
-/* END MY STUDY STYLING */
-/* START MY ENVIRONMENT STYLING */
-
-/* END MY ENVIRONMENT STYLING*/
-/* START MY INTERESTS STYLING */
-
-/* END MY INTERESTS STYLING */
-/* START STYLING MY RECOMMENDATIONS */
-
-
-/* END STYLING MY RECOMMENDATIONS */
-/* START FOOTER STYLING */
-
-/* END FOOTER STYLING */
+}
