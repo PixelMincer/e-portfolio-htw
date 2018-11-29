@@ -22,6 +22,8 @@ header {
   font-family: 'TitleFont';
   font-size: 1.2rem;
   color: black;
+  padding: 0;
+  border: unset;
 }
 
 .navigation-list li {
@@ -79,6 +81,8 @@ header {
 .overlay ul {
   font-family: 'TitleFont', cursive;
   text-transform: uppercase;
+  padding: 0;
+  border: unset;
 }
 
 .overlay ul li a {
