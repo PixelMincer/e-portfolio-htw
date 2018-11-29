@@ -13,7 +13,7 @@
 #map {
   height: 550px;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   /* Header height + section height + height of title - normalize.css margin-bottom*/
   top: calc(80px + 80px + 80px - 0.67em);
   position: absolute;

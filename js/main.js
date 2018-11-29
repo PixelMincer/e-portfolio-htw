@@ -15,7 +15,9 @@ function initMap() {
   // The map, centered at myLocation
   var map = new google.maps.Map(
     document.getElementById('map'), {
-      center: myLocation
+      center: myLocation,
+      zoom: 20,
+      mapTypeId: 'satellite'
     });
   // The marker, positioned at my location
   var marker = new google.maps.Marker({
@@ -26,10 +28,4 @@ function initMap() {
   var bounds = new google.maps.LatLngBounds();
   var loc = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
   bounds.extend(loc);
-
-  // TODO: Fix this
-  map.fitBounds(bounds);
-  map.panToBounds(bounds);
-
-
 }
