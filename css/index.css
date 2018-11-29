@@ -1,38 +1,38 @@
 #my-address {
-    display: block;
-    background-color: white;
-    font-family: 'TitleFont', cursive;
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-    padding-top: 10px;
-  }
-  
-  #map {
-    height: 350px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-    opacity: 0.5;
-    top: calc(150px + 80px);
-    /* Padding from section + height of title*/
-    position: absolute;
-  }
-  
-  .timeline__content p {
-    font-size: 1em;
-  }
-  
-  .timeline__content h2 {
-    font-size: 1em;
-  }
-  
-  .timeline__content hr {
-    border-bottom: 5px solid black;
-    margin-top: -5px;
-    width: 60%;
-  }
-  
-  .timeline__content__wrap {
-    font-size: 2em;
-  }
+  display: block;
+  background-color: white;
+  font-family: 'TitleFont', cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  /* Half height of map*/
+  margin-top: calc(550px / 2);
+}
+
+#map {
+  height: 550px;
+  width: 100%;
+  opacity: 0.5;
+  /* Header height + section height + height of title - normalize.css margin-bottom*/
+  top: calc(80px + 80px + 80px - 0.67em);
+  position: absolute;
+}
+
+.timeline__content p {
+  font-size: 1rem;
+}
+
+.timeline__content h2 {
+  font-size: 1rem;
+}
+
+.timeline__content hr {
+  border-bottom: 5px solid black;
+  margin-top: -5px;
+  width: 60%;
+}
+
+.timeline__content__wrap {
+  font-size: 2em;
+}

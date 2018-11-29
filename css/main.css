@@ -1,3 +1,6 @@
+/* Font Awesome Include see (https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself) for further information */
+@import url('../vendors/font-awesome/all.min.css');
+
 /* START GLOBAL STYLING */
 @font-face {
   font-family: 'TitleFont';
@@ -14,14 +17,25 @@ body {
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'TitleFont', cursive;
   text-transform: uppercase;
   word-break: break-word;
 }
 
 @media screen and (max-width: 896px) {
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 2rem;
   }
 }
@@ -145,6 +159,7 @@ ul.white {
 .title h1 {
   padding-left: 20%;
   line-height: 150px;
+  margin-top: 0;
 }
 
 .title-image {
@@ -161,14 +176,7 @@ ul.white {
   word-break: break-word;
 }
 
-.keyword.white {
-  border-bottom: 3px solid white;
-}
-
-.keyword.black {
-  border-bottom: 3px solid black;
-}
-
+/* Clearfix see https://css-tricks.com/snippets/css/clear-fix/ for further information*/
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -189,15 +197,14 @@ ul.white {
 }
 
 .reference {
-  color: inherit;
+  color: #0aaff1;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 5px solid #0aaff1;
   transition: color 0.5s ease;
 }
 
 .reference:hover {
-  color: #0aaff1;
+  color: #02D5DA;
 }
 
 
