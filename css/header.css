@@ -1,12 +1,9 @@
 /* START HEADER STYLING */
 header {
-  height: 80px;
+  height: 120px;
   width: 100%;
-  /*background-color: #2a2a2a;*/
-  background-color: white;
   position: fixed;
   /* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq*/
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 991;
   display: flex;
   flex-direction: row;
@@ -15,15 +12,40 @@ header {
   flex-wrap: wrap;
 }
 
-.navigation-list {
+
+
+header .navigation-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-family: 'TitleFont';
+  font-family: 'Catamaran', sans-serif;
   font-size: 1.2rem;
-  color: black;
+  color: white;
   padding: 0;
   border: unset;
+}
+
+
+header .navigation-list li:hover {
+  color: black;
+}
+
+header.active {
+  background-color: #FAEBED;
+  height: 80px;
+}
+
+header.active .bar {
+  background-color: black;
+}
+
+header.active .navigation-list li:hover {
+  color: #815D76;
+}
+
+header.active .navigation-list {
+  color: black;
+  font-size: 1.2rem;
 }
 
 .navigation-list li {
@@ -32,21 +54,17 @@ header {
   transition: color 0.5s ease;
 }
 
-.navigation-list li:hover {
-  color: #1DA1F2;
-}
-
 .navigation-list li a {
   color: inherit;
   text-decoration: none;
 }
 
 .bar {
-  background-color: #0aaff1;
+  background-color: white;
 }
 
-.toggle-active .bar {
-  background-color: #0aaff1;
+header.active .toggle-active .bar {
+  background-color: black;
 }
 
 .toggle-button {
@@ -63,7 +81,6 @@ header {
   .navigation-list {
     visibility: hidden;
   }
-
 }
 
 .toggle-button:hover {
@@ -72,26 +89,37 @@ header {
 
 .overlay {
   background-image: none;
-  /*background-color: #2a2a2a;*/
-  background-color: white;
+  background-color: #494151;
   z-index: 990;
-  color: black;
+  color: white;
+}
+
+.overlay.active {
+    background-color: #FAEBED;
 }
 
 .overlay ul {
-  font-family: 'TitleFont', cursive;
+  font-family: 'Catamaran', sans-serif;
   text-transform: uppercase;
   padding: 0;
   border: unset;
 }
 
 .overlay ul li a {
-  color: black;
+  color: white;
   font-size: 0.5em;
   transition: color 0.5s ease;
 }
 
 .overlay ul li a:hover {
-  color: #0aaff1;
+  color: black;
   font-size: 0.5em;
+}
+
+.overlay.active ul li a {
+  color: black;
+}
+
+.overlay.active  ul li a:hover {
+    color: #815D76;
 }

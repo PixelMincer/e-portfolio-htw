@@ -1,19 +1,10 @@
 /* Font Awesome Include see (https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself) for further information */
 @import url('../vendors/font-awesome/all.min.css');
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:800');
 /* START GLOBAL STYLING */
-@font-face {
-  font-family: 'TitleFont';
-  src: url('../assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'TextFont';
-  src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
-}
-
 body {
-  font-family: 'TextFont', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: black;
 }
 
@@ -23,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'TitleFont', cursive;
+  font-family: 'Indie Flower', cursive;
   text-transform: uppercase;
   word-break: break-word;
 }
@@ -47,16 +38,19 @@ pre {
 }
 
 section {
-  padding-top: 80px;
-}
-
-article {
-  padding: 20px 20%;
   min-height: 350px;
 }
 
+section.after-heading {
+  padding-top: 120px; /* Header height see header.css */
+  background-color: #494151;
+}
+
+article {
+  padding: 30px;
+}
+
 article.first {
-  padding-top: 80px;
 }
 
 article.white {
@@ -84,7 +78,6 @@ ul {
   padding: 20px 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-
 }
 
 ul li {
@@ -134,50 +127,12 @@ ul.white {
   width: 100%;
 }
 
-.image-circle {
-  border-radius: 50%;
-}
-
-.image-circle.white {
-  border: 5px solid white;
-  background-color: white;
-}
-
-.image-circle.blue {
-  background-color: #1DA1F2;
-  border: 5px solid #1DA1F2;
+.image-x-550 {
+  max-width: 550px;
 }
 
 .block-center {
   margin: 0 auto;
-}
-
-.title {
-  background-color: #1DA1F2;
-  width: 100%;
-  height: 150px;
-  color: white;
-  font-weight: bold;
-}
-
-.title h1 {
-  padding-left: 20%;
-  line-height: 150px;
-  margin-top: 0;
-}
-
-.title-image {
-  position: relative;
-  top: -35px;
-  left: 20%;
-  margin-bottom: 20px;
-  z-index: 2;
-}
-
-.keyword {
-  text-transform: uppercase;
-  font-weight: bold;
-  word-break: break-word;
 }
 
 /* Clearfix see https://css-tricks.com/snippets/css/clear-fix/ for further information*/
@@ -200,24 +155,61 @@ ul.white {
   zoom: 1;
 }
 
-.reference {
-  color: #0aaff1;
+.container-center-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heading {
   text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.5s ease;
+  font-size: 2rem;
+  font-family: 'Catamaran', sans-serif;
 }
 
-.reference:hover {
-  color: #02D5DA;
+.white {
+  color: white;
 }
 
+.source {
+  font-style: italic;
+  font-size: 1.2rem;
+}
 
-@media screen and (max-width: 1040px) {
-  .title-image {
-    left: 0;
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
+.remove-padding-top {
+  padding-top: 0;
+}
 
+.banner-image {
+  min-height: 450px;
+  width: 100%;
+}
+
+.banner-image.coding {
+  /* Source: https://unsplash.com/photos/PuxTq4DwUHE */
+  /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/web-design-coding.jpg');
+  background-size: cover;
+}
+
+.banner-image.cv {
+  /* Source: https://unsplash.com/photos/1tFd-Bb1pxk */
+  /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/cv.jpg');
+  background-size: cover;
 }

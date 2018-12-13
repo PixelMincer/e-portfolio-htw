@@ -2,7 +2,7 @@ footer {
   height: 100px;
   line-height: 100px;
   width: 100%;
-  /*background-color: #2a2a2a;*/
+  background-color: #F17686;
   position: static;
   bottom: 0;
   margin: 0;
@@ -10,8 +10,7 @@ footer {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  color: black;
-  border-top: 3px solid black;
+  color: white;
 }
 
 .social-media-list {
@@ -30,7 +29,7 @@ footer {
 }
 
 .social-media-list li:hover {
-  color: #0aaff1;
+  color: #524A72;
 }
 
 .social-media-list li a {

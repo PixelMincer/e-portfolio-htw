@@ -1,9 +1,23 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $('.timeline').timeline({
     startIndex: 0,
     mode: 'vertical'
   });
 });
+
+
+$(window).on("scroll", function() {
+  if ($(window).scrollTop() > 50) {
+    $("header").addClass("active");
+    $(".overlay").addClass("active");
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $("header").removeClass("active");
+    $(".overlay").removeClass("active");
+  }
+});
+
+
 
 // Initialize and add the map
 function initMap() {
@@ -16,8 +30,95 @@ function initMap() {
   var map = new google.maps.Map(
     document.getElementById('map'), {
       center: myLocation,
-      zoom: 20,
-      mapTypeId: 'satellite'
+      zoom: 10,
+      mapTypeId: 'roadmap',
+      /* For styling I used https://snazzymaps.com/style/127403/no-label-bright-colors */
+      styles: [{
+          "featureType": "all",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": "32"
+            },
+            {
+              "lightness": "-3"
+            },
+            {
+              "visibility": "on"
+            },
+            {
+              "weight": "1.18"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "landscape.man_made",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": "-70"
+            },
+            {
+              "lightness": "14"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "labels",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{
+              "saturation": "100"
+            },
+            {
+              "lightness": "-14"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels",
+          "stylers": [{
+              "visibility": "off"
+            },
+            {
+              "lightness": "12"
+            }
+          ]
+        }
+      ]
     });
   // The marker, positioned at my location
   var marker = new google.maps.Marker({
