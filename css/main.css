@@ -57,31 +57,8 @@ section.after-heading.green {
 article {
   padding: 30px;
 }
-
-article.first {
-}
-
-article.white {
-  background-color: white;
-}
-
-article.blue {
-  background-color: #0aaff1;
-}
-
-article.gray {
-  background-color: #d2d2d2;
-}
-
-article.yellow {
-  background-color: #f5c024;
-}
-
-article.green {
-  background-color: #466b5a;
-}
-
 /* END GLOBAL STYLING */
+
 /* START UTILITY CLASSES */
 
 .unstyle-link {
@@ -113,14 +90,6 @@ article.green {
   transform: scale(1.02);
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 .text-center {
   text-align: center;
 }
@@ -133,57 +102,11 @@ article.green {
   text-transform: uppercase;
 }
 
-.image-center {
-  display: block;
-  margin: 0 auto;
-}
-
-.image-x-250 {
-  max-width: 250px;
-  width: 100%;
-}
-
-.image-x-200 {
-  max-width: 200px;
-  width: 100%;
-}
-
-.image-x-550 {
-  max-width: 550px;
-}
-
-.block-center {
-  margin: 0 auto;
-}
-
-/* Clearfix see https://css-tricks.com/snippets/css/clear-fix/ for further information*/
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-/* IE6 */
-* html .clearfix {
-  zoom: 1;
-}
-
-/* IE7 */
-*:first-child+html .clearfix {
-  zoom: 1;
-}
-
 .container-center-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.container-center-row.wrap {
 }
 
 .container-center-column {
@@ -208,10 +131,6 @@ article.green {
 .source {
   font-style: italic;
   font-size: 1.2rem;
-}
-
-.remove-padding-top {
-  padding-top: 0;
 }
 
 .banner-image {
