@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-Portfolio - YH</title>
+  <title>E-Portfolio - My Interests</title>
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -45,7 +45,7 @@
     </ul>
   </header>
 
-  <nav class="overlay" id="overlay">
+  <nav class="overlay light-green" id="overlay">
     <ul>
       <li><a href="./index.html">About Me</a></li>
       <li><a href="./myStudy_myVision.html">My Study / Vision</a></li>
@@ -55,25 +55,33 @@
     </ul>
   </nav>
 
-  <section>
-    <div class="title">
-      <h1># My Interests</h1>
+  <section class="container-center-row after-heading green">
+    <div class="white text-center">
+      <h1 class="heading">An investment in knowledge pays the best interest.</h1>
+      <h2 class="heading source">- Benjamin Franklin</h2>
     </div>
-    <img class="title-image image-circle image-x-250 white" src="https://via.placeholder.com/150" alt="Profile Picture">
+  </section>
+
+  <section>
+    <div class="container-center-column banner-image interests">
+      <div class="white text-center">
+        <h1 class="heading">My Interests</h1>
+      </div>
+    </div>
 
     <article>
-      <p class="text-black">
-        As already mentioned <a class="reference" href="./index.html#myVision">here</a> I am very interested in <span
-          class="keyword black">developing video games</span>. I do that with the help of the amazing <span class="keyword black">Unreal
+      <p>
+        As already mentioned <a class="unstyle-link" href="./index.html#myVision"><span class="keyword light-green">here</span></a> I am very interested in <span
+          class="keyword light-green">developing video games</span>. I do that with the help of the amazing <span class="keyword light-green">Defold
           Engine</span>. What may sound simple is actually a really demanding task because of the
         various
         aspects which go into developing such a thing. Therefore I am currently working on improving my skillset in the
         following areas:
       </p>
 
-      <ul class="black">
-        <li>3D Modelling with Maya</li>
-        <li>Learning the ins and outs of the Unreal Engine</li>
+      <ul class="list card text-uppercase">
+        <li>3D Modelling with Blender</li>
+        <li>Learning the ins and outs of the Defold Engine</li>
         <li>Getting more profficient with design patterns in software development</li>
       </ul>
 
@@ -83,14 +91,12 @@
       </p>
 
       <div class="video-gallery">
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/ZWQ0591PAxM" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe>
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/RZUDEaLa5Nw" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/oric3ADAZMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/j_yGRhdhVhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <p class="text-black">
-        And here are some of the very early <span class="keyword black">3d models</span> that I have created:
+        And here are some of the very early <span class="keyword light-green">3d models</span> that I have created with Blender:
       </p>
       <div class="model-gallery">
         <div class="sketchfab-embed-wrapper"><iframe width="320" height="240" src="https://sketchfab.com/models/0e7a8bc9d4bb4c108a98caa2255f31b4/embed"
@@ -122,7 +128,7 @@
 
       <p class="text-black">
         As you can see this is all really technical so for me it really helps if I have a counter measurement
-        (something completely different). For me this is <span class="keyword black">doing some light sport activities</span>
+        (something completely different). For me this is <span class="keyword light-green">doing some light sport activities</span>
       </p>
     </article>
   </section>
@@ -138,6 +144,9 @@
 
   <script type="text/javascript" src="./vendors/jquery/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="./vendors/jquery-overlay-menu/overlay.js"></script>
+  <script type="text/javascript" src="./js/main.js">
+
+  </script>
 </body>
 
 </html>

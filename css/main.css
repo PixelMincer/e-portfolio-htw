@@ -183,6 +183,9 @@ article.green {
   align-items: center;
 }
 
+.container-center-row.wrap {
+}
+
 .container-center-column {
   display: flex;
   flex-direction: column;
@@ -253,6 +256,16 @@ article.green {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),url('../assets/images/vision.jpg');
+  background-size: cover;
+}
+
+.banner-image.interests {
+  /* Source: https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=899&q=80 */
+  /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/interests.jpg');
   background-size: cover;
 }
 

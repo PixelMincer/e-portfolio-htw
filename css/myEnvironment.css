@@ -1,35 +1,49 @@
-.important-person {
+
+.important-people-container{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: center;
-  margin: 15px 0;
+  align-items: center;
 }
 
-.important-person .picture {
-  flex-shrink: 0;
-}
-
-.important-person .description {
-  margin-left: 15px;
-}
-
-.important-person .description h2 {
-  font-size: 3em;
-}
-
-@media screen and (max-width: 1040px) {
-  .important-person {
+@media screen and (max-width: 1621px) {
+  .important-people-container{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
+}
 
-  .important-person .description {
-    text-align: center;
-  }
+.example-1 .wrapper.brother {
+  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+}
 
-  p {
-    text-align: center;
-  }
+.example-1 .wrapper.mother {
+  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+}
+
+.example-1 .wrapper.roger {
+  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+}
+
+.example-1 .wrapper.shannon {
+  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+}
+
+.card .text {
+  height: 150px;
+  margin: 0;
+}
+
+.card .wrapper {
+  margin: 20px 0;
+  min-width: 350px;
+  max-width: 550px;
+}
+
+.example-1 .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F4828C;
+  color: #fff;
+  padding: 0.8em;
 }
