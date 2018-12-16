@@ -60,7 +60,6 @@ header.active .navigation-list {
 .toggle-button {
   z-index: 992;
   display: none;
-  width: 50px;
   margin-top: 10px;
 }
 
@@ -80,10 +79,19 @@ header.active .navigation-list {
 
 .overlay {
   background-image: none;
-  background-color: #775D6A;
   z-index: 990;
   color: white;
 }
+
+.overlay.brown {
+  background-color: #775D6A;
+}
+
+.overlay.light-green {
+  background-color: #8EB9A8;
+}
+
+
 
 .overlay.active {
     background-color: #F4828C;

@@ -3,20 +3,18 @@
 
 <head>
   <meta lang="en">
-  <meta name="keywords" content="Unity Engine, Game Programming, 3D-Modelling, Web Enthusiast">
+  <meta name="keywords" content="Defold Engine, Game Programming, 3D-Modelling, Web Enthusiast">
   <meta author="Yannick Hutter">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-Portfolio - YH</title>
+  <title>E-Portfolio - My Study / Vision</title>
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900" rel="stylesheet">
-
-
 
   <link rel="stylesheet" href="./vendors/normalize/normalize.css">
   <link rel="stylesheet" href="./vendors/jquery-overlay-menu/overlay.css">
@@ -36,16 +34,17 @@
       <span class="bar bottom"></span>
     </div>
 
-    <ul class="navigation-list">
+    <ul class="navigation-list text-uppercase">
       <li><a href="./index.html">About Me</a></li>
-      <li><a href="./myStudy_myVision.html">My Study / Vision</a></li>
+      <li><a href="#">My Study / Vision</a></li>
       <li><a href="./myEnvironment.html">My Environment</a></li>
       <li><a href="./myInterests.html">My Interests</a></li>
       <li><a href="./myRecommendations.html">My Recommendations</a></li>
     </ul>
+
   </header>
 
-  <nav class="overlay" id="overlay">
+  <nav class="overlay light-green" id="overlay">
     <ul>
       <li><a href="./index.html">About Me</a></li>
       <li><a href="#">My Study / Vision</a></li>
@@ -55,55 +54,65 @@
     </ul>
   </nav>
 
-  <section>
-    <div class="title">
-      <h1># My Study</h1>
+
+  <section class="container-center-row after-heading green">
+    <div class="white text-center">
+      <h1 class="heading">Success is the result of perfection, hard work, learning from failure, loyalty, and persistence.</h1>
+      <h2 class="heading source">- Colin Powell</h2>
     </div>
-    <img class="title-image image-circle image-x-250 white" src="./assets/images/htw-logo.png" alt="Profile Picture">
+  </section>
+
+  <section>
+    <div class="container-center-column banner-image study">
+      <div class="white text-center">
+        <h1 class="heading">My Study</h1>
+      </div>
+    </div>
 
     <article>
-      <p class="text-black">
-        So why do I study <span class="keyword black">DBM</span> at HTW Chur? First and foremost I find it a very
-        important skill in todays society to be able to innovate and <span class="keyword black">think outside the box</span>.
+      <p>
+        So why do I study <span class="keyword light-green">DBM</span> at HTW Chur? First and foremost I find it a very
+        important skill in todays society to be able to innovate and <span class="keyword light-green">think outside the box</span>.
         With this said I
         think the DBM study gives me the following benefits:
       </p>
 
-      <ul class="black">
+      <ul class="list card text-uppercase">
         <li>Create and test new solutions directly with the market</li>
         <li>Getting to know project management</li>
         <li>Staying on the rising edge of technology</li>
         <li>Getting to know basic concepts in order to run a business</li>
       </ul>
 
-      <p class="text black">
+      <p>
         I think these skills and experiences are really. In my free time and during my job I have more of the technical
-        aspects and during study I learn really valuable skills. This way I can get <span class="keyword black">the
+        aspects and during study I learn really valuable skills. This way I can get <span class="keyword light-green">the
           best of both worlds</span>.
       </p>
-
-
     </article>
 
-    <div class="title">
-      <h1># My Vision</h1>
+    <div class="container-center-column banner-image vision">
+      <div class="white text-center">
+        <h1 class="heading">My Vision</h1>
+      </div>
     </div>
+
     <article id="myVision">
       <p class="text-black">
-        For me a vision has to do with what <span class="keyword black">I love the most</span>. This may not bring in
+        For me a vision has to do with what <span class="keyword light-green">I love the most</span>. This may not bring in
         the most amount of money or be the most easiest thing but I will definiely be the thing I will enjoy the most.
         With this said I
         would
-        like to try following my dream which is <span class="keyword black">becoming a video game developer</span>.
+        like to try following my dream which is <span class="keyword light-green">becoming a video game developer</span>.
         Here I have multiple possiblities:
       </p>
 
-      <ul class="black">
+      <ul class="list card text-uppercase">
         <li>Create a startup</li>
         <li>Join an existing company</li>
       </ul>
 
-      <p class="text-black">
+      <p>
         Lets analyze these opportunities. If I were to create a startup I would need the necessary amount of founding
         money. Besides money I would need the necesary people. As you can imagine making a video games involves various
         disciplines such as
@@ -125,18 +134,21 @@
         possible one step at a time. A wall is also not build in a day but brick by brick, day by day, step by step.
       </p>
     </article>
+
+
   </section>
 
   <footer>
     <ul class="social-media-list">
-      <li><a href="https://twitter.com/UnrealModelling" target="_blank" i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://twitter.com/DefoldArt" target="_blank" i class="fab fa-twitter"></i></a></li>
       <li><a href="mailto:hutteryannick@gmail.com"><i class="far fa-envelope" mailto></i></a></li>
     </ul>
   </footer>
 
-
   <script type="text/javascript" src="./vendors/jquery/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="./vendors/jquery-overlay-menu/overlay.js"></script>
+  <script type="text/javascript" src="./js/main.js">
+  </script>
 </body>
 
 </html>

@@ -44,7 +44,14 @@ section {
 
 section.after-heading {
   padding-top: 120px; /* Header height see header.css */
+}
+
+section.after-heading.brown {
   background-color: #775D6A;
+}
+
+section.after-heading.green {
+  background-color: #8EB9A8;
 }
 
 article {
@@ -188,6 +195,7 @@ article.green {
   text-transform: uppercase;
   font-size: 2rem;
   font-family: 'Catamaran', sans-serif;
+  padding: 0 20px;
 }
 
 .white {
@@ -228,13 +236,44 @@ article.green {
   background-size: cover;
 }
 
-.keyword.light-red {
+.banner-image.study {
+  /* Source: https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80 */
+  /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/study.jpg');
+  background-size: cover;
+}
+
+.banner-image.vision {
+  /* Source: https://images.unsplash.com/photo-1535349829444-d5f58e7f43e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1576&q=80 */
+  /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/vision.jpg');
+  background-size: cover;
+}
+
+.keyword {
   text-transform: uppercase;
-  border-bottom: 4px solid #F4828C;
   font-weight: bold;
   transition: 0.5s color ease-in;
 }
 
+.keyword.light-red {
+  border-bottom: 4px solid #F4828C;
+}
+
 .keyword.light-red:hover {
   color: #F4828C;
+}
+
+.keyword.light-green {
+  border-bottom: 4px solid #8EB9A8;
+}
+
+.keyword.light-green:hover {
+  color: #8EB9A8;
 }
