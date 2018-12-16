@@ -1,11 +1,12 @@
 /* Font Awesome Include see (https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself) for further information */
 @import url('../vendors/font-awesome/all.min.css');
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:800');
 /* START GLOBAL STYLING */
 body {
   font-family: 'Open Sans', sans-serif;
   color: black;
+  line-height: 1.7rem;
 }
 
 h1,
@@ -14,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Catamaran', cursive;
   text-transform: uppercase;
   word-break: break-word;
 }
@@ -43,7 +44,7 @@ section {
 
 section.after-heading {
   padding-top: 120px; /* Header height see header.css */
-  background-color: #494151;
+  background-color: #775D6A;
 }
 
 article {
@@ -73,25 +74,36 @@ article.green {
   background-color: #466b5a;
 }
 
-ul {
+/* END GLOBAL STYLING */
+/* START UTILITY CLASSES */
+
+.unstyle-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq */
+.list.card li {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.list {
   list-style-type: none;
-  padding: 20px 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  margin: 20px 0;
+  padding: 0;
 }
 
-ul li {
-  margin-left: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
+.list li {
+  padding: 50px 0;
+  max-width: 450px;
+  text-align: center;
+  margin: 15px auto;
+  transition: 0.5s transform ease-in;
 }
 
-ul.black {
-  color: black;
-}
-
-ul.white {
-  color: white;
+.list li:hover {
+  transform: scale(1.02);
 }
 
 .left {
@@ -102,14 +114,16 @@ ul.white {
   float: right;
 }
 
-/* END GLOBAL STYLING */
-/* START UTILITY CLASSES */
 .text-center {
   text-align: center;
 }
 
 .text-white {
   color: white;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .image-center {
@@ -205,11 +219,22 @@ ul.white {
 }
 
 .banner-image.cv {
-  /* Source: https://unsplash.com/photos/1tFd-Bb1pxk */
+  /* Source: https://images.unsplash.com/photo-1527896573815-b7dd74893deb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/cv.jpg');
+    ),url('../assets/images/cv-bg.jpg');
   background-size: cover;
+}
+
+.keyword.light-red {
+  text-transform: uppercase;
+  border-bottom: 4px solid #F4828C;
+  font-weight: bold;
+  transition: 0.5s color ease-in;
+}
+
+.keyword.light-red:hover {
+  color: #F4828C;
 }

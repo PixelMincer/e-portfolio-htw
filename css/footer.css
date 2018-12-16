@@ -2,7 +2,7 @@ footer {
   height: 100px;
   line-height: 100px;
   width: 100%;
-  background-color: #F17686;
+  background-color: #F4828C;
   position: static;
   bottom: 0;
   margin: 0;
@@ -29,7 +29,7 @@ footer {
 }
 
 .social-media-list li:hover {
-  color: #524A72;
+  color: black;
 }
 
 .social-media-list li a {

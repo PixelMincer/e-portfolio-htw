@@ -1,7 +1,7 @@
 #map-location {
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 #map {
@@ -11,15 +11,34 @@
   position: relative;
 }
 
-.timeline__content p {
-  font-size: 1rem;
+.timeline::before {
+  content: "";
+  background: #F4828C;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.timeline__content h2 {
-    font-family: 'Catamaran', sans-serif;
-  font-size: 1rem;
+.timeline-content {
+  background: white;
 }
 
-.timeline__content__wrap {
-  font-size: 2em;
+/* Source image: https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9rf_Jo6TfAhVDLewKHfgIA8oQjRx6BAgBEAU&url=https%3A%2F%2Fwww.tagblatt.ch%2Fostschweiz%2Fwerdenberg-obertoggenburg%2Fweltweit-erfolgreich-mit-innovation-in-medizintechnik-und-software-ld.978764&psig=AOvVaw3rfsmSqcVWdKfQw5rEmKYh&ust=1545047193547157*/
+.timeline-item .timeline-img-header.imt-ag {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../assets/images/imt-ag.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+/* Source image: https://www.suedostschweiz.ch/sites/default/files/styles/np8_full/public/elvis-media/2018-12/_THG6665_preview_0.jpg?itok=XaZpHr2k */
+.timeline-item .timeline-img-header.htw {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../assets/images/htw-chur.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* Source image: https://www.gbssg.ch/fileadmin/user_upload/bilder/Schulhaeuser/Schulaus_HG_Teaster_16_9.jpg */
+.timeline-item .timeline-img-header.gbs {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../assets/images/gbs.jpg") center center no-repeat;
+  background-size: cover;
 }

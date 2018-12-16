@@ -1,11 +1,3 @@
-$(document).ready(function() {
-  $('.timeline').timeline({
-    startIndex: 0,
-    mode: 'vertical'
-  });
-});
-
-
 $(window).on("scroll", function() {
   if ($(window).scrollTop() > 50) {
     $("header").addClass("active");

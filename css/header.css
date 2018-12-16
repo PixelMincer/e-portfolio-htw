@@ -1,15 +1,12 @@
-/* START HEADER STYLING */
 header {
   height: 120px;
   width: 100%;
   position: fixed;
-  /* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq*/
   z-index: 991;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 
@@ -31,20 +28,17 @@ header .navigation-list li:hover {
 }
 
 header.active {
-  background-color: #FAEBED;
+  background-color: #F4828C;
   height: 80px;
 }
 
-header.active .bar {
-  background-color: black;
-}
 
 header.active .navigation-list li:hover {
-  color: #815D76;
+  color: black;
 }
 
 header.active .navigation-list {
-  color: black;
+  color: white;
   font-size: 1.2rem;
 }
 
@@ -63,23 +57,20 @@ header.active .navigation-list {
   background-color: white;
 }
 
-header.active .toggle-active .bar {
-  background-color: black;
-}
-
 .toggle-button {
   z-index: 992;
-  display: block;
-  visibility: hidden;
+  display: none;
+  width: 50px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1040px) {
   .toggle-button {
-    visibility: visible;
+    display: block;
   }
 
   .navigation-list {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -89,37 +80,36 @@ header.active .toggle-active .bar {
 
 .overlay {
   background-image: none;
-  background-color: #494151;
+  background-color: #775D6A;
   z-index: 990;
   color: white;
 }
 
 .overlay.active {
-    background-color: #FAEBED;
+    background-color: #F4828C;
 }
 
 .overlay ul {
   font-family: 'Catamaran', sans-serif;
   text-transform: uppercase;
   padding: 0;
-  border: unset;
 }
+
+.overlay ul li {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
 
 .overlay ul li a {
   color: white;
-  font-size: 0.5em;
   transition: color 0.5s ease;
 }
 
 .overlay ul li a:hover {
   color: black;
-  font-size: 0.5em;
 }
 
-.overlay.active ul li a {
-  color: black;
-}
-
-.overlay.active  ul li a:hover {
-    color: #815D76;
+.overlay.active ul li a:hover {
+    color: black;
 }
