@@ -2,19 +2,23 @@
 <html lang="de">
 
 <head>
-  <!-- This website was programmed on Google Chrome Webbrowser (Version 70.0.3538.102) but should also work for newer versions... -->
+  <!-- General Information about this website -->
+  <!-- Editor: Atom,  https://atom.io/ -->
+  <!-- Browser: Google Chrome (Version >= 71.0),  https://www.google.com/chrome/ -->
 
   <meta lang="en">
-  <meta name="keywords" content="Defold Engine, Game Programming, 3D-Modelling, Web Enthusiast">
+  <meta name="keywords" content="Panda3D, Game Programming, 3D-Modelling, Web Enthusiast">
   <meta author="Yannick Hutter">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>E-Portfolio - YH</title>
-  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
+  <!-- This is used to normalize some default settings between different browsers -->
   <link rel="stylesheet" href="./vendors/normalize/normalize.css">
+  <!-- This is needed to make the hamburger menu work, for more information see https://www.jqueryscript.net/menu/Fullscreen-Hamburger-Menu-Plugin-jQuery-Overlay-Menu.html -->
   <link rel="stylesheet" href="./vendors/jquery-overlay-menu/overlay.css">
+  <!-- This is needed to make the timeline work correctly, for more information see https://codepen.io/savalazic/pen/QKwERN/ -->
   <link rel="stylesheet" href="./vendors/vertical-timeline/timeline.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
@@ -87,11 +91,11 @@
         <li>C# / Java</li>
         <li>Html / CSS </li>
         <li>JavaScript / TypeScript</li>
-        <li>Lua</li>
+        <li>Python</li>
       </ul>
 
-      <p>
-        I soon became interested in developing <span class="keyword light-red">video games</span>. Turns out developing video games is really hard but also a lot of fun. Nowadays with the help of <span class="keyword light-red">game engines</span> such as <a class="unstyle-link" href="https://www.defold.com/" target="_blank"><span class="keyword light-red">Defold</span></a> the process is more streamlined then ever.
+      <p id="interest-in-video-games">
+        I soon became interested in developing <span class="keyword light-red">video games</span>. Turns out developing video games is really hard but also a lot of fun.
         As I am currently working in IT which is an ever-evolving field you <span class="keyword light-red">always have
           room for improvement</span>. And that's what I find important. If I would know
         everything I would be pretty bored. For me learning and experimenting with new technology is a great joy which
@@ -149,18 +153,20 @@
 
   <footer>
     <ul class="social-media-list">
-      <li><a href="https://twitter.com/DefoldArt" target="_blank" i class="fab fa-twitter"></i></a></li>
-      <li><a href="mailto:hutteryannick@gmail.com"><i class="far fa-envelope" mailto></i></a></li>
+      <li><a href="https://twitter.com/YahArtDT" target="_blank" i class="fab fa-twitter"></i></a></li>
+      <li><a href="mailto:hutteryannick@gmail.com"><i class="far fa-envelope"></i></a></li>
     </ul>
   </footer>
 
+  <!-- JQuery Library needed for hamburger menu etc. -->
   <script type="text/javascript" src="./vendors/jquery/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="./vendors/jquery-overlay-menu/overlay.js"></script>
+  <!-- Scroll reveal library needed to make the slide in effect work of the timeline items -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script type="text/javascript" src="./vendors/vertical-timeline/timeline.js"></script>
-  <script type="text/javascript" src="./js/map.js">
-
-  </script>
+  <!-- Google Map stuff -->
+  <script type="text/javascript" src="./js/map.js"></script>
+  <!-- Needed to make the color change of the header work on scrolling -->
   <script type="text/javascript" src="./js/main.js"></script>
 
   <!--Load the API from the specified URL

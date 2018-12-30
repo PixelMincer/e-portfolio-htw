@@ -13,19 +13,28 @@
 }
 
 .example-1 .wrapper.brother {
-  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+  background: url('../assets/images/brother.jpeg') 20% 1%/cover no-repeat;
+  background-position: center;
+}
+
+.example-1 .wrapper.karin {
+  background: url('../assets/images/karin.jpeg') 20% 1%/cover no-repeat;
+  background-position: center;
 }
 
 .example-1 .wrapper.mother {
-  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+  background: url('../assets/images/mother.jpg') 20% 1%/cover no-repeat;
+  background-position: center;
 }
 
 .example-1 .wrapper.roger {
-  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+  background: url('../assets/images/roger.jpeg') 20% 1%/cover no-repeat;
+  background-position: center;
 }
 
 .example-1 .wrapper.shannon {
-  background: url('../assets/images/profile.jpg') 20% 1%/cover no-repeat;
+  background: url('../assets/images/dog.jpg') 20% 1%/cover no-repeat;
+  background-position: center;
 }
 
 .card .text {
@@ -35,8 +44,8 @@
 
 .card .wrapper {
   margin: 20px 0;
-  min-width: 350px;
-  max-width: 550px;
+  min-width: 250px;
+  max-width: 450px;
 }
 
 .example-1 .date {
