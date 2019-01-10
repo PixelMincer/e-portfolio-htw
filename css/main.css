@@ -48,14 +48,6 @@ section.after-heading {
   /* Header height see header.css */
 }
 
-section.after-heading.brown {
-  background-color: #775D6A;
-}
-
-section.after-heading.green {
-  background-color: #8EB9A8;
-}
-
 section.after-heading.blue {
   background-color: #0aaff1;
 }
@@ -197,22 +189,6 @@ article {
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.5s color ease-in;
-}
-
-.keyword.light-red {
-  border-bottom: 4px solid #F4828C;
-}
-
-.keyword.light-red:hover {
-  color: #F4828C;
-}
-
-.keyword.light-green {
-  border-bottom: 4px solid #8EB9A8;
-}
-
-.keyword.light-green:hover {
-  color: #8EB9A8;
 }
 
 .keyword.blue {
