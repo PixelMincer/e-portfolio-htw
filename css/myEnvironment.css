@@ -1,5 +1,4 @@
-
-.important-people-container{
+.important-people-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +6,7 @@
 }
 
 @media screen and (max-width: 1621px) {
-  .important-people-container{
+  .important-people-container {
     flex-direction: column;
   }
 }
@@ -52,7 +51,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #F4828C;
+  background-color: #0aaff1;
   color: #fff;
   padding: 0.8em;
 }

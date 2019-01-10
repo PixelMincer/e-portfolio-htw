@@ -1,5 +1,5 @@
 header {
-  height: 120px;
+  height: 80px;
   width: 100%;
   position: fixed;
   z-index: 991;
@@ -7,6 +7,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #2a2a2a;
 }
 
 
@@ -24,11 +25,11 @@ header .navigation-list {
 
 
 header .navigation-list li:hover {
-  color: black;
+  color: #0aaff1;
 }
 
 header.active {
-  background-color: #F4828C;
+  background-color: #0aaff1;
   height: 80px;
 }
 
@@ -83,18 +84,24 @@ header.active .navigation-list {
   color: white;
 }
 
+
 .overlay.brown {
   background-color: #775D6A;
 }
 
+.overlay.black {
+  background-color: #2a2a2a;
+}
+
+/*
 .overlay.light-green {
   background-color: #8EB9A8;
 }
 
 
-
+*/
 .overlay.active {
-    background-color: #F4828C;
+  background-color: #0aaff1;
 }
 
 .overlay ul {
@@ -115,9 +122,9 @@ header.active .navigation-list {
 }
 
 .overlay ul li a:hover {
-  color: black;
+  color: #0aaff1;
 }
 
 .overlay.active ul li a:hover {
-    color: black;
+  color: black;
 }

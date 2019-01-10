@@ -13,7 +13,7 @@
 
 .timeline::before {
   content: "";
-  background: #F4828C;
+  background: #0aaff1;
   width: 5px;
   height: 95%;
   position: absolute;
@@ -41,4 +41,8 @@
 .timeline-item .timeline-img-header.gbs {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../assets/images/gbs.jpg") center center no-repeat;
   background-size: cover;
+}
+
+.date {
+  background-color: #0aaff1;
 }

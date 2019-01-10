@@ -2,6 +2,7 @@
 @import url('../vendors/font-awesome/all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:800');
+
 /* START GLOBAL STYLING */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -43,7 +44,8 @@ section {
 }
 
 section.after-heading {
-  padding-top: 120px; /* Header height see header.css */
+  padding-top: 120px;
+  /* Header height see header.css */
 }
 
 section.after-heading.brown {
@@ -54,9 +56,14 @@ section.after-heading.green {
   background-color: #8EB9A8;
 }
 
+section.after-heading.blue {
+  background-color: #0aaff1;
+}
+
 article {
   padding: 30px;
 }
+
 /* END GLOBAL STYLING */
 
 /* START UTILITY CLASSES */
@@ -68,7 +75,7 @@ article {
 
 /* Inspiration from: https://codepen.io/sdthornton/pen/wBZdXq */
 .list.card li {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -141,60 +148,48 @@ article {
 .banner-image.coding {
   /* Source: https://unsplash.com/photos/PuxTq4DwUHE */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/web-design-coding.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/web-design-coding.jpg');
   background-size: cover;
 }
 
 .banner-image.cv {
   /* Source: https://images.unsplash.com/photo-1527896573815-b7dd74893deb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/cv-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/cv-bg.jpg');
   background-size: cover;
 }
 
 .banner-image.study {
   /* Source: https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/study.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/study.jpg');
   background-size: cover;
 }
 
 .banner-image.vision {
   /* Source: https://images.unsplash.com/photo-1535349829444-d5f58e7f43e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1576&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/vision.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/vision.jpg');
   background-size: cover;
 }
 
 .banner-image.interests {
   /* Source: https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=899&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/interests.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/interests.jpg');
   background-size: cover;
 }
 
 .banner-image.recommendations {
   /* Source: https://images.unsplash.com/photo-1494178270175-e96de2971df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1572&q=80 */
   /* Gradient inspiration comes from: https://css-tricks.com/design-considerations-text-images/ */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url('../assets/images/recommendations.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../assets/images/recommendations.jpg');
   background-size: cover;
 }
 
@@ -218,4 +213,12 @@ article {
 
 .keyword.light-green:hover {
   color: #8EB9A8;
+}
+
+.keyword.blue {
+  border-bottom: 4px solid #0aaff1;
+}
+
+.keyword.blue:hover {
+  color: #0aaff1;
 }
