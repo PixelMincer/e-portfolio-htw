@@ -11,6 +11,9 @@ $(document).ready(function () {
         bearing: -17.6
     });
 
+    // disable map zoom when using scroll
+    map.scrollZoom.disable();
+
 
 
     // The 'building' layer in the mapbox-streets vector source contains building-height
