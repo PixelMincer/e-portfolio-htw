@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="./vendors/jquery-overlay-menu/overlay.css">
   <!-- This is needed to make the timeline work correctly, for more information see https://codepen.io/savalazic/pen/QKwERN/ -->
   <link rel="stylesheet" href="./vendors/vertical-timeline/timeline.css">
+  <!-- This is needed to make the mapbox work -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/index.css">
@@ -167,18 +170,10 @@
   <!-- Scroll reveal library needed to make the slide in effect work of the timeline items -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script type="text/javascript" src="./vendors/vertical-timeline/timeline.js"></script>
-  <!-- Google Map stuff -->
-  <script type="text/javascript" src="./js/map.js"></script>
+  <!-- Google Map Box initialization -->
+  <script type="text/javascript" src="./js/init-mapbox.js"></script>
   <!-- Needed to make the color change of the header work on scrolling -->
   <script type="text/javascript" src="./js/main.js"></script>
-
-  <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk_2z1Ou9Jb7i750yDHQpXh2TKno4qmEc&callback=initMap">
-  </script>
 </body>
 
 </html>
